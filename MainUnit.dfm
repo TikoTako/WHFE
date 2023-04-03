@@ -557,8 +557,6 @@ object MainForm: TMainForm
     ScrollBars = ssBoth
     TabOrder = 0
     WordWrap = False
-    ExplicitWidth = 644
-    ExplicitHeight = 385
   end
   object Button2: TButton
     Left = 8
@@ -569,7 +567,6 @@ object MainForm: TMainForm
     Caption = 'Change font'
     TabOrder = 1
     OnClick = Button2Click
-    ExplicitTop = 399
   end
   object AboutButton: TButton
     Left = 558
@@ -580,8 +577,6 @@ object MainForm: TMainForm
     Caption = 'About'
     TabOrder = 2
     OnClick = AboutButtonClick
-    ExplicitLeft = 577
-    ExplicitTop = 399
   end
   object BackupCheckBox: TCheckBox
     Left = 281
@@ -599,8 +594,6 @@ object MainForm: TMainForm
     ParentFont = False
     State = cbChecked
     TabOrder = 3
-    ExplicitLeft = 89
-    ExplicitTop = 373
   end
   object FontDialog1: TFontDialog
     Font.Charset = DEFAULT_CHARSET

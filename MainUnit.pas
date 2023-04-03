@@ -70,7 +70,7 @@ begin
             try
               with TFileStream.create(Format('backup\%s.txt', [FormatDateTime('DD-MM-YYY HH_nn_ss', now)]), fmCreate) do
                 try
-                  writeBuffer(gOriginalHostsFileData[1], Length(gOriginalHostsFileData));
+                  writeBuffer(gOriginalHostsFileData[1], Length(gOriginalHostsFileData) * SizeOf(Char));
                 finally
                   free;
                 end;

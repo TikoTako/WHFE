@@ -4,7 +4,7 @@
         <ProjectVersion>19.4</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
@@ -111,6 +111,9 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>whfe.ico</Icon_MainIcon>
+        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=TikoTako;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.1;InternalName=WHFE;LegalCopyright=(c) 2022 TikoTako;LegalTrademarks=;OriginalFilename=WHFE.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=https://github.com/TikoTako</VerInfo_Keys>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">

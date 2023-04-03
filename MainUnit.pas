@@ -68,12 +68,17 @@ begin
             if not DirectoryExists('backup') then
               TDirectory.CreateDirectory('backup');
             try
+              // Save with utf8 encoding
+              TFile.WriteAllText(Format('backup\%s.txt', [FormatDateTime('DD-MM-YYY HH_nn_ss', now)]), gOriginalHostsFileData);
+              {
+              // well, derp this save the string in binary so if is a wstring > utf-16 w/o the BOM
               with TFileStream.create(Format('backup\%s.txt', [FormatDateTime('DD-MM-YYY HH_nn_ss', now)]), fmCreate) do
                 try
                   writeBuffer(gOriginalHostsFileData[1], Length(gOriginalHostsFileData) * SizeOf(Char));
                 finally
                   free;
                 end;
+               }
             except
               on e: exception do
                 MessageDlg(e.Message, mtError, [mbOk], 0);

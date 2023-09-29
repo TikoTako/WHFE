@@ -13,3 +13,6 @@ The settings file and the backup directory are created in the exe path.</p>
 ✅ Can change font and size (stored in the settings file).</br>
 ✅ Remember the window size and position (stored in the settings file).</br>
 
+
+## Donations
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I0PNUUU)
